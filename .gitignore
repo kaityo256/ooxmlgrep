@@ -19,8 +19,9 @@ ehthumbs.db
 *.swp
 *.swo
 
-# Task関連
+# ビルド関連
 .task/
+dist/
 
 # Go依存ツールのキャッシュ
 bin/

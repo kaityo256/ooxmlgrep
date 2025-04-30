@@ -1,4 +1,5 @@
-# .goreleaser.yml
+version: 2
+
 project_name: ooxmlgrep
 
 builds:
@@ -12,8 +13,6 @@ builds:
     goarch:
       - amd64
       - arm64
-    goarm:
-      - 6
     env:
       - CGO_ENABLED=0
 
@@ -33,5 +32,4 @@ checksum:
 snapshot:
   name_template: "dev"
 
-changelog:
-  skip: true
+changelog: {}

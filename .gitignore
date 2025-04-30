@@ -1,0 +1,40 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.o
+ooxmlgrep
+
+# OSやエディタが生成する不要ファイル
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE/エディタ関連
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Task関連
+.task/
+
+# Go依存ツールのキャッシュ
+bin/
+pkg/
+
+# ユーザ環境による一時ファイル
+*.log
+*.tmp
+*.bak
+
+# coverage や test 出力
+coverage.*
+*.coverprofile
+
+vendor/
+__MACOSX/
+

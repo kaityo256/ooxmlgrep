@@ -1,0 +1,32 @@
+version: '3'
+
+tasks:
+  build:
+    desc: Build the binary
+    cmds:
+      - go build -o ooxmlgrep main.go
+    sources:
+      - '**/*.go'
+    generates:
+      - ooxmlgrep
+
+  run:
+    desc: Run the CLI tool
+    cmds:
+      - ./ooxmlgrep
+
+  clean:
+    desc: Remove built binary
+    cmds:
+      - rm -f ooxmlgrep
+
+  tidy:
+    desc: Clean up go.mod and go.sum
+    cmds:
+      - go mod tidy
+
+  test:
+    desc: Run tests
+    cmds:
+      - go test ./...
+

@@ -1,0 +1,37 @@
+# .goreleaser.yml
+project_name: ooxmlgrep
+
+builds:
+  - id: ooxmlgrep
+    main: .
+    binary: ooxmlgrep
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    goarm:
+      - 6
+    env:
+      - CGO_ENABLED=0
+
+archives:
+  - id: default
+    format_overrides:
+      - goos: windows
+        format: zip
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+    files:
+      - LICENSE
+      - README.md
+
+checksum:
+  name_template: "checksums.txt"
+
+snapshot:
+  name_template: "dev"
+
+changelog:
+  skip: true

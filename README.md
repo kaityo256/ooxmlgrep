@@ -23,7 +23,7 @@ Make sure your `$GOPATH/bin` or `$HOME/go/bin` is in your `$PATH`.
 
 ### From Prebuilt Binaries
 
-You can download prebuilt binaries for macOS, Linux, and Windows from the [Releases](https://github.com/yourname/ooxmlgrep/releases) page.
+You can download prebuilt binaries for macOS, Linux, and Windows from the [Releases](https://github.com/kaityo256/ooxmlgrep/releases) page.
 
 ## Usage
 

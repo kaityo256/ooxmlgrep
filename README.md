@@ -16,7 +16,7 @@ It extracts slide text and performs grep-like matching, with optional highlighti
 ### From Source (requires Go 1.17+)
 
 ```sh
-go install github.com/yourname/ooxmlgrep@latest
+go install github.com/kaityo256/ooxmlgrep@latest
 ```
 
 Make sure your `$GOPATH/bin` or `$HOME/go/bin` is in your `$PATH`.
